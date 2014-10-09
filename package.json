@@ -1,0 +1,18 @@
+{
+  "name": "igniteui-polymer",
+  "version": "0.0.1",
+  "description": "Polymer web components for Infragistics IgniteUI",
+  "main": "index.html",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ak4e/igniteui-polymer.git"
+  },
+  "author": "Alexander Kartavov @ak4e",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ak4e/igniteui-polymer/issues"
+  },
+  "homepage": "https://github.com/ak4e/igniteui-polymer"
+}

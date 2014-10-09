@@ -1,0 +1,20 @@
+<link rel="import" href="../ig.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="ig-rating">
+    
+  <template>
+    <div id="igRatingElement"></div>
+  </template>
+    
+  <script>
+    var _current;
+    Polymer("ig-rating", {
+        ready: function() {
+                debugger;
+                $(this.$.igRatingElement).igRating();
+            }
+    });
+  </script>
+    
+</polymer-element>
