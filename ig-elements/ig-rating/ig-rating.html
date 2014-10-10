@@ -4,15 +4,18 @@
 <polymer-element name="ig-rating">
     
   <template>
-    <div id="igRatingElement"></div>
+    <link rel="stylesheet" href="../../igniteui/css/structure/infragistics.css">
+    <link rel="stylesheet" href="../../igniteui/css/themes/infragistics/infragistics.theme.css">
+    <span id="igRatingElement">ig-rating shadow dom</span>
   </template>
     
   <script>
-    var _current;
-    Polymer("ig-rating", {
-        ready: function() {
-                debugger;
-                $(this.$.igRatingElement).igRating();
+    Polymer({
+        domReady: function() {
+                //debugger;
+                $(this.$.igRatingElement).igRating({
+
+                });
             }
     });
   </script>
