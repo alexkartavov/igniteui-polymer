@@ -1,0 +1,29 @@
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+<script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.dv.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/2014.2/latest/js/infragistics.lob.js"></script>
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+  <template>
+    <link rel="stylesheet" href="../igniteui/css/structure/infragistics.css">
+    <link rel="stylesheet" href="../igniteui/css/themes/infragistics/infragistics.theme.css">
+    <span id="igRatingElement">ig-rating shadow dom</span>
+  </template>
+    
+  <script>
+    Polymer({
+        domReady: function() {
+                var options = {};
+                for(var i = 0; i < this.attributes.length; i++) {
+                    var attr = this.attributes[i];
+                    options[attr.nodeName] = attr.nodeValue;
+                }
+                $(this.$.igRatingElement).igRating(options);
+            }
+    });
+  </script>
+    
+</polymer-element>
