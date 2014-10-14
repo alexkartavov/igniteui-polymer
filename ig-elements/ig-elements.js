@@ -1,4 +1,5 @@
-(function() {
+(function () {
+    "use strict";
 	var igControls = [
         {
             name: "ig-rating", // Web component name
@@ -6,20 +7,20 @@
             html: "", // default HTML/ Main element must have id 'igElement'. If ommitted a div is used
             defaults: {} // default options. May be ommitted
         }
-    ];
-    
-    var camelCaseName = function(name) {
-        if(!name || typeof name != "string")
-            return name;
-        var n = name.split('-');
-        for(var i = 1; i < n.length; i++) {
-            var c = n[i].charAt(0);
-            if(c >= 'a' && c <= 'z') {
-                n[i][0] = String.fromCharCode(c.charCodeAt(0) - 32);
+    ],
+        camelCaseName = function (name) {
+            if (!name || typeof name !== "string") {
+                return name;
             }
-        }
-        return n.join('');
-    }
+            var n = name.split('-');
+            for (var i = 1; i < n.length; i++) {
+                var c = n[i].charAt(0);
+                if(c >= 'a' && c <= 'z') {
+                    n[i] = String.fromCharCode(c.charCodeAt(0) - 32) + n[i].substring(1);
+                }
+            }
+            return n.join('');
+        };
     
     for (var i = 0; i < igControls.length; i++) {
         var el = document.createElement('div');
